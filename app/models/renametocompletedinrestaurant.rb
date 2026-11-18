@@ -1,0 +1,2 @@
+class Renametocompletedinrestaurant < ApplicationRecord
+end

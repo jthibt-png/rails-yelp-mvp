@@ -1,0 +1,16 @@
+
+
+<h1><%= @restaurant.name %></h1>
+
+<p><%= @restaurant.adresse %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.categorie %></p>
+
+
+<%= link_to "Back to restaurant", restaurants_path %>
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
+
+<%= link_to "Delete",
+  restaurant_path(@restaurant),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
